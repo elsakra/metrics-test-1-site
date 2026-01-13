@@ -93,15 +93,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       }
     </style>
   </head>
+  
   <body>
     <slot />
     
-    <!-- Import global styles -->
+    <!-- Import global styles and animations -->
     <style is:global>
       @import '../styles/global.css';
     </style>
     
-    <!-- Animation script -->
     <script>
       import '../scripts/animations.ts';
     </script>

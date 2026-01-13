@@ -27,7 +27,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-primary-800 mb-1">Phone</h4>
-                <a href="tel:6623491999" class="text-lg text-gray-700 hover:text-accent-600 transition-colors">
+                <a href="tel:6623491999" class="text-lg text-gray-800 hover:text-accent-600 transition-colors font-medium">
                   (662) 349-1999
                 </a>
               </div>
@@ -42,7 +42,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-primary-800 mb-1">Fax</h4>
-                <p class="text-lg text-gray-700">(662) 349-9734</p>
+                <p class="text-lg text-gray-800 font-medium">(662) 349-9734</p>
               </div>
             </div>
             
@@ -57,69 +57,95 @@
               </div>
               <div>
                 <h4 class="font-semibold text-primary-800 mb-1">Address</h4>
-                <p class="text-lg text-gray-700">
+                <p class="text-lg text-gray-800 font-medium">
                   7680 Airways Blvd.<br>
                   Southaven, MS 38671
                 </p>
               </div>
             </div>
-          </div>
-          
-          <div class="mt-8 pt-6 border-t border-primary-200">
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a href="tel:6623491999" class="btn-primary flex-1 text-center">
-                Call Now
-              </a>
-              <a href="/hours-location" class="btn-secondary flex-1 text-center">
-                View Hours
-              </a>
+            
+            <!-- Hours -->
+            <div class="flex items-start space-x-4">
+              <div class="bg-accent-100 p-3 rounded-full">
+                <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-primary-800 mb-2">Office Hours</h4>
+                <div class="text-gray-800 space-y-1">
+                  <p><span class="font-medium">Mon & Wed:</span> 7:00 AM - 5:00 PM</p>
+                  <p><span class="font-medium">Tue & Thu:</span> 8:00 AM - 5:00 PM</p>
+                  <p><span class="font-medium">Friday:</span> 7:00 AM - 11:00 AM</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
-        <!-- Office Hours Quick Reference -->
-        <div class="bg-gray-50 p-6 rounded-lg">
-          <h4 class="text-lg font-semibold text-primary-800 mb-4">Office Hours</h4>
-          <div class="space-y-2 text-sm">
-            <div class="flex justify-between">
-              <span class="text-gray-600">Mon & Wed:</span>
-              <span class="font-medium">7:00 AM - 5:00 PM</span>
-            </div>
-            <div class="flex justify-between">
-              <span class="text-gray-600">Tue & Thu:</span>
-              <span class="font-medium">8:00 AM - 5:00 PM</span>
-            </div>
-            <div class="flex justify-between">
-              <span class="text-gray-600">Friday:</span>
-              <span class="font-medium">7:00 AM - 11:00 AM</span>
+        <!-- Emergency Notice -->
+        <div class="bg-red-50 border border-red-200 p-6 rounded-lg">
+          <div class="flex items-start space-x-3">
+            <svg class="w-6 h-6 text-red-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-red-800 mb-2">Medical Emergency</h4>
+              <p class="text-red-700">
+                For medical emergencies, please call 911 or go to your nearest emergency room immediately.
+              </p>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Map/Image -->
-      <div class="relative">
-        <div class="bg-primary-100 rounded-lg p-8 h-full flex items-center justify-center">
-          <div class="text-center">
-            <div class="bg-white p-6 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6">
-              <img 
-                src="https://res.cloudinary.com/dil14r8je/image/upload/v1768291045/auto-site-builder/metrics-test-1/image_4.png" 
-                alt="Location" 
-                class="w-12 h-12"
-              />
+      <!-- Quick Actions -->
+      <div class="space-y-8">
+        <!-- Call to Action Cards -->
+        <div class="bg-gradient-to-br from-accent-400 to-accent-600 p-8 rounded-lg text-white">
+          <h3 class="text-2xl font-bold mb-4">Schedule an Appointment</h3>
+          <p class="mb-6 text-accent-50">
+            Call us today to schedule your appointment with our board certified physicians.
+          </p>
+          <a href="tel:6623491999" class="bg-white text-accent-600 font-bold py-3 px-8 rounded-full hover:bg-gray-50 transition-colors inline-block">
+            Call (662) 349-1999
+          </a>
+        </div>
+        
+        <div class="bg-primary-800 p-8 rounded-lg text-white">
+          <h3 class="text-2xl font-bold mb-4">Patient Portal Access</h3>
+          <p class="mb-6 text-gray-200">
+            Access your health records, test results, and communicate with your physician securely online.
+          </p>
+          <a href="/patient-portal" class="bg-white text-primary-800 font-bold py-3 px-8 rounded-full hover:bg-gray-50 transition-colors inline-block">
+            Access Portal
+          </a>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-2xl font-bold text-primary-800 mb-4">New Patients Welcome</h3>
+          <p class="text-gray-700 mb-6">
+            We're accepting new patients and would love to welcome you to our practice family.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-gray-700">Most insurance plans accepted</span>
             </div>
-            <h3 class="text-2xl font-bold text-primary-800 mb-4">Visit Our Office</h3>
-            <p class="text-gray-700 mb-6">
-              Conveniently located on Airways Boulevard in Southaven, MS. Easy parking and accessible entrance.
-            </p>
-            <a 
-              href="https://maps.google.com/?q=7680+Airways+Blvd,+Southaven,+MS+38671" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="btn-secondary"
-            >
-              Get Directions
-            </a>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-gray-700">Same-day appointments available</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-gray-700">On-site laboratory services</span>
+            </div>
           </div>
         </div>
       </div>
