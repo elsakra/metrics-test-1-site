@@ -91,17 +91,45 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           animation: none !important;
         }
       }
+      
+      /* Ensure proper layout flow */
+      html, body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      main {
+        flex: 1;
+        min-height: calc(100vh - 80px);
+      }
+      
+      /* Fix for content loading issues */
+      .animate-section {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      
+      .animate-cards .card {
+        opacity: 1 !important;
+        transform: none !important;
+      }
     </style>
   </head>
-  
   <body>
     <slot />
     
-    <!-- Import global styles and animations -->
+    <!-- Import global styles -->
     <style is:global>
       @import '../styles/global.css';
     </style>
     
+    <!-- Animation script -->
     <script>
       import '../scripts/animations.ts';
     </script>

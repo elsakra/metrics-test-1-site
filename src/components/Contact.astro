@@ -2,7 +2,7 @@
 // No props needed
 ---
 
-<section class="py-20 bg-white animate-section opacity-0">
+<section class="py-20 bg-white animate-section">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
       <h2 class="section-title">Contact Us Today</h2>
@@ -61,91 +61,60 @@
                   7680 Airways Blvd.<br>
                   Southaven, MS 38671
                 </p>
-              </div>
-            </div>
-            
-            <!-- Hours -->
-            <div class="flex items-start space-x-4">
-              <div class="bg-accent-100 p-3 rounded-full">
-                <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-semibold text-primary-800 mb-2">Office Hours</h4>
-                <div class="text-gray-800 space-y-1">
-                  <p><span class="font-medium">Mon & Wed:</span> 7:00 AM - 5:00 PM</p>
-                  <p><span class="font-medium">Tue & Thu:</span> 8:00 AM - 5:00 PM</p>
-                  <p><span class="font-medium">Friday:</span> 7:00 AM - 11:00 AM</p>
-                </div>
+                <a 
+                  href="https://maps.google.com/?q=7680+Airways+Blvd,+Southaven,+MS+38671" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="text-accent-600 hover:text-accent-700 transition-colors text-sm font-medium"
+                >
+                  Get Directions →
+                </a>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- Emergency Notice -->
-        <div class="bg-red-50 border border-red-200 p-6 rounded-lg">
-          <div class="flex items-start space-x-3">
-            <svg class="w-6 h-6 text-red-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z" />
-            </svg>
-            <div>
-              <h4 class="font-semibold text-red-800 mb-2">Medical Emergency</h4>
-              <p class="text-red-700">
-                For medical emergencies, please call 911 or go to your nearest emergency room immediately.
-              </p>
+        <!-- Office Hours -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h3 class="text-2xl font-semibold text-primary-800 mb-6">Office Hours</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="font-medium text-gray-800">Monday & Wednesday</span>
+              <span class="text-primary-800 font-semibold">7:00 AM - 5:00 PM</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-medium text-gray-800">Tuesday & Thursday</span>
+              <span class="text-primary-800 font-semibold">8:00 AM - 5:00 PM</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-medium text-gray-800">Friday</span>
+              <span class="text-primary-800 font-semibold">7:00 AM - 11:00 AM</span>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Quick Actions -->
-      <div class="space-y-8">
-        <!-- Call to Action Cards -->
-        <div class="bg-gradient-to-br from-accent-400 to-accent-600 p-8 rounded-lg text-white">
-          <h3 class="text-2xl font-bold mb-4">Schedule an Appointment</h3>
-          <p class="mb-6 text-accent-50">
-            Call us today to schedule your appointment with our board certified physicians.
+      <!-- Call to Action -->
+      <div class="flex flex-col justify-center space-y-8">
+        <div class="text-center">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768291048/auto-site-builder/metrics-test-1/image_13.jpg"
+            alt="Southaven Internal Medicine Office"
+            class="rounded-lg shadow-xl w-full h-64 object-cover mb-8"
+          />
+          
+          <h3 class="text-3xl font-bold text-primary-800 mb-4">Ready to Schedule?</h3>
+          <p class="text-lg text-gray-700 mb-8">
+            Call us today to schedule your appointment or learn more about our services. We're here to provide you with exceptional care.
           </p>
-          <a href="tel:6623491999" class="bg-white text-accent-600 font-bold py-3 px-8 rounded-full hover:bg-gray-50 transition-colors inline-block">
-            Call (662) 349-1999
-          </a>
-        </div>
-        
-        <div class="bg-primary-800 p-8 rounded-lg text-white">
-          <h3 class="text-2xl font-bold mb-4">Patient Portal Access</h3>
-          <p class="mb-6 text-gray-200">
-            Access your health records, test results, and communicate with your physician securely online.
-          </p>
-          <a href="/patient-portal" class="bg-white text-primary-800 font-bold py-3 px-8 rounded-full hover:bg-gray-50 transition-colors inline-block">
-            Access Portal
-          </a>
-        </div>
-        
-        <div class="bg-gray-50 p-8 rounded-lg">
-          <h3 class="text-2xl font-bold text-primary-800 mb-4">New Patients Welcome</h3>
-          <p class="text-gray-700 mb-6">
-            We're accepting new patients and would love to welcome you to our practice family.
-          </p>
-          <div class="space-y-3">
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span class="text-gray-700">Most insurance plans accepted</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span class="text-gray-700">Same-day appointments available</span>
-            </div>
-            <div class="flex items-center space-x-3">
-              <svg class="w-5 h-5 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span class="text-gray-700">On-site laboratory services</span>
-            </div>
+          
+          <div class="space-y-4">
+            <a href="tel:6623491999" class="btn-primary text-lg px-10 py-4 w-full block text-center">
+              Call (662) 349-1999
+            </a>
+            <a href="/patient-portal" class="btn-secondary text-lg px-10 py-4 w-full block text-center">
+              Access Patient Portal
+            </a>
           </div>
         </div>
       </div>
