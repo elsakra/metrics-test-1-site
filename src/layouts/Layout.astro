@@ -88,15 +88,22 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         .animate-fade-in,
         .animate-slide-up,
         .animate-float {
-          animation: none;
+          animation: none !important;
         }
       }
     </style>
   </head>
-  <body class="bg-primary-50">
+  <body>
     <slot />
     
-    <!-- Load animations script -->
-    <script src="/src/scripts/animations.ts" type="module"></script>
+    <!-- Import global styles -->
+    <style is:global>
+      @import '../styles/global.css';
+    </style>
+    
+    <!-- Animation script -->
+    <script>
+      import '../scripts/animations.ts';
+    </script>
   </body>
 </html>
