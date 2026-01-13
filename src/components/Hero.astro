@@ -1,0 +1,62 @@
+---
+export interface Props {
+  title: string;
+  subtitle?: string;
+  backgroundImage?: string;
+  showCta?: boolean;
+  ctaText?: string;
+  ctaLink?: string;
+}
+
+const { 
+  title, 
+  subtitle, 
+  backgroundImage = 'https://res.cloudinary.com/dil14r8je/image/upload/v1768291045/auto-site-builder/metrics-test-1/image_1.jpg',
+  showCta = true,
+  ctaText = 'Call Today',
+  ctaLink = 'tel:6623491999'
+} = Astro.props;
+---
+
+<section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img 
+      src={backgroundImage}
+      alt="Southaven Internal Medicine"
+      class="w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 bg-primary-800/70"></div>
+  </div>
+  
+  <!-- Content -->
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="hero-title text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 opacity-0">
+      {title}
+    </h1>
+    
+    {subtitle && (
+      <p class="hero-subtitle text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto opacity-0">
+        {subtitle}
+      </p>
+    )}
+    
+    {showCta && (
+      <div class="hero-cta flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0">
+        <a href={ctaLink} class="btn-primary text-lg px-10 py-4">
+          {ctaText}
+        </a>
+        <a href="#about" class="btn-secondary text-lg px-10 py-4">
+          Learn More
+        </a>
+      </div>
+    )}
+  </div>
+  
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>

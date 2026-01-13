@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Southaven Internal Medicine - Board Certified Physicians Since 1996"
+  description="Southaven Internal Medicine provides comprehensive internal medicine care in Southaven, MS. Board certified physicians Dr. Magdi Wassef and Dr. Mary Missak offer preventative medicine, health screenings, and personalized care since 1996."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Dedicated to Our Patients Since 1996"
+      subtitle="Southaven Internal Medicine provides comprehensive internal medicine care with board certified physicians in a friendly, family-like environment."
+      ctaText="Call (662) 349-1999"
+      ctaLink="tel:6623491999"
+    />
+    
+    <About />
+    <Services />
+    <Contact />
+  </main>
+  
+  <Footer />
+</Layout>

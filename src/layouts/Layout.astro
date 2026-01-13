@@ -1,0 +1,102 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const { title, description = 'Southaven Internal Medicine - Dedicated to our patients since 1996. Board certified physicians providing comprehensive internal medicine care in Southaven, MS.', image = '/og-image.jpg' } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalOrganization",
+        "name": "Southaven Internal Medicine",
+        "description": "Board certified internal medicine physicians providing comprehensive healthcare since 1996",
+        "url": "https://southaven-internal-medicine.com",
+        "telephone": "(662) 349-1999",
+        "faxNumber": "(662) 349-9734",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7680 Airways Blvd",
+          "addressLocality": "Southaven",
+          "addressRegion": "MS",
+          "postalCode": "38671",
+          "addressCountry": "US"
+        },
+        "openingHours": [
+          "Mo 07:00-17:00",
+          "Tu 08:00-17:00",
+          "We 07:00-17:00",
+          "Th 08:00-17:00",
+          "Fr 07:00-11:00"
+        ],
+        "foundingDate": "1996",
+        "medicalSpecialty": "Internal Medicine"
+      }
+    </script>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    
+    <!-- Global Styles -->
+    <style>
+      .navbar.scrolled {
+        @apply bg-white/95 backdrop-blur-md shadow-lg;
+      }
+      
+      .mobile-menu {
+        display: none;
+      }
+      
+      .mobile-menu.open {
+        display: block;
+      }
+      
+      @media (prefers-reduced-motion: reduce) {
+        .animate-fade-in,
+        .animate-slide-up,
+        .animate-float {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-primary-50">
+    <slot />
+    
+    <!-- Load animations script -->
+    <script src="/src/scripts/animations.ts" type="module"></script>
+  </body>
+</html>

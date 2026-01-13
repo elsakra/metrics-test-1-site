@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Meet Our Providers - Southaven Internal Medicine"
+  description="Meet Dr. Magdi Wassef and Dr. Mary Missak, board certified internal medicine physicians at Southaven Internal Medicine. Over 30 years of experience providing comprehensive healthcare."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Meet Our Providers"
+      subtitle="Board certified physicians dedicated to providing exceptional internal medicine care"
+      backgroundImage="https://res.cloudinary.com/dil14r8je/image/upload/v1768291048/auto-site-builder/metrics-test-1/image_10.jpg"
+      showCta={false}
+    />
+    
+    <!-- Providers Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="section-title">Our Experienced Medical Team</h2>
+          <p class="section-subtitle">
+            Meet our board certified internal medicine physicians who have been serving the Southaven community for decades.
+          </p>
+        </div>
+        
+        <!-- Dr. Magdi Wassef -->
+        <div class="mb-20">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            <div class="lg:col-span-1">
+              <div class="text-center">
+                <img 
+                  src="https://res.cloudinary.com/dil14r8je/image/upload/v1768291048/auto-site-builder/metrics-test-1/image_11.jpg"
+                  alt="Dr. Magdi Wassef"
+                  class="w-64 h-64 object-cover rounded-full mx-auto shadow-xl mb-6"
+                />
+                <h3 class="text-3xl font-bold text-primary-800 mb-2">Dr. Magdi Wassef</h3>
+                <p class="text-lg text-accent-600 font-medium mb-4">Founder & Internal Medicine Physician</p>
+                <div class="bg-primary-50 p-4 rounded-lg">
+                  <p class="text-sm text-gray-600 mb-2">Board Certified in:</p>
+                  <p class="font-semibold text-primary-800">Internal Medicine</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="lg:col-span-2">
+              <div class="prose prose-lg max-w-none">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                  <h4 class="text-2xl font-semibold text-primary-800 mb-6">About Dr. Wassef</h4>
+                  
+                  <div class="space-y-4 text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                      Dr. Magdi Wassef has been practicing internal medicine for over thirty years, bringing extensive experience and dedication to patient care.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                      <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-primary-800 mb-3">Education & Training</h5>
+                        <ul class="space-y-2 text-sm">
+                          <li>• Alexandria Medical School, Egypt (1985)</li>
+                          <li>• Internal Medicine Residency, Wales, UK (1989)</li>
+                          <li>• Residency, Methodist University Hospital</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-primary-800 mb-3">Professional Experience</h5>
+                        <ul class="space-y-2 text-sm">
+                          <li>• Tallahatchie General Hospital (1994-1996)</li>
+                          <li>• Founded Southaven Internal Medicine (1996)</li>
+                          <li>• 25+ years serving Southaven community</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <p class="text-lg leading-relaxed">
+                      After completing his residency, Dr. Wassef practiced at Tallahatchie General Hospital in Charleston, MS from 1994 to 1996 and then moved back to Memphis where he started Southaven Internal Medicine in 1996.
+                    </p>
+                    
+                    <div class="bg-accent-50 p-6 rounded-lg my-6">
+                      <h5 class="font-semibold text-primary-800 mb-3">Professional Memberships</h5>
+                      <ul class="space-y-1 text-gray-700">
+                        <li>• American College of Physicians</li>
+                        <li>• American Medical Association</li>
+                        <li>• Board Certified in Internal Medicine</li>
+                      </ul>
+                    </div>
+                    
+                    <p class="text-lg leading-relaxed">
+                      Dr. Wassef is married to Amira and they have two college aged children, Megan and David. When he is not working, Dr. Wassef enjoys spending time with his family and friends and serving in his church.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dr. Mary Missak -->
+        <div>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            <div class="lg:col-span-1 lg:order-2">
+              <div class="text-center">
+                <img 
+                  src="https://res.cloudinary.com/dil14r8je/image/upload/v1768291048/auto-site-builder/metrics-test-1/image_12.jpg"
+                  alt="Dr. Mary Missak"
+                  class="w-64 h-64 object-cover rounded-full mx-auto shadow-xl mb-6"
+                />
+                <h3 class="text-3xl font-bold text-primary-800 mb-2">Dr. Mary Missak</h3>
+                <p class="text-lg text-accent-600 font-medium mb-4">Internal Medicine Physician</p>
+                <div class="bg-primary-50 p-4 rounded-lg mb-4">
+                  <p class="text-sm text-gray-600 mb-2">Board Certified in:</p>
+                  <p class="font-semibold text-primary-800">Internal Medicine</p>
+                </div>
+                <div class="bg-accent-50 p-4 rounded-lg">
+                  <p class="text-sm text-gray-600 mb-2">Additional Role:</p>
+                  <p class="font-semibold text-accent-700">Chief of Medicine</p>
+                  <p class="text-xs text-gray-600">Baptist Desoto Hospital</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="lg:col-span-2 lg:order-1">
+              <div class="prose prose-lg max-w-none">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                  <h4 class="text-2xl font-semibold text-primary-800 mb-6">About Dr. Missak</h4>
+                  
+                  <div class="space-y-4 text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                      Dr. Mary Missak has been practicing internal medicine for over 30 years, bringing decades of experience and expertise to patient care.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                      <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-primary-800 mb-3">Education & Training</h5>
+                        <ul class="space-y-2 text-sm">
+                          <li>• University of Alexandria Medical School (1978)</li>
+                          <li>• Internal Medicine Residency, Methodist University Hospital</li>
+                          <li>• MBA, Christian Brothers University (2019)</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h5 class="font-semibold text-primary-800 mb-3">Leadership Roles</h5>
+                        <ul class="space-y-2 text-sm">
+                          <li>• Chief of Medicine, Baptist Desoto Hospital</li>
+                          <li>• Medical Director, Campus Hospice Southaven</li>
+                          <li>• Partner, Southaven Internal Medicine (2000)</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <p class="text-lg leading-relaxed">
+                      After spending time in England, Dr. Missak moved to Memphis for her internal medicine residency at Methodist University Hospital. In 2000, she joined her brother (Dr. Wassef) at Southaven Internal Medicine.
+                    </p>
+                    
+                    <div class="bg-accent-50 p-6 rounded-lg my-6">
+                      <h5 class="font-semibold text-primary-800 mb-3">Recent Achievement</h5>
+                      <p class="text-gray-700">
+                        In 2019, Dr. Missak received her MBA from Christian Brothers University, further enhancing her leadership capabilities in healthcare management.
+                      </p>
+                    </div>
+                    
+                    <p class="text-lg leading-relaxed">
+                      Dr. Missak has two children who are both in the medical field, continuing the family tradition of healthcare service. When she is not working, Dr. Missak loves to paint and spend time with friends and family.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Practice Philosophy -->
+    <section class="py-20 bg-primary-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="section-title">Our Practice Philosophy</h2>
+        <div class="bg-white p-12 rounded-lg shadow-lg">
+          <blockquote class="text-2xl text-gray-700 italic mb-8">
+            "Our goal is to make our patients feel like they are family. We focus on preventative medicine, health screenings, and helping our community find solutions to the health challenges they face."
+          </blockquote>
+          <div class="flex items-center justify-center space-x-8">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary-800">30+</div>
+              <div class="text-gray-600">Years Experience</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-accent-600">2</div>
+              <div class="text-gray-600">Board Certified Physicians</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-primary-800">1996</div>
+              <div class="text-gray-600">Established</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary-800 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-6">Schedule Your Appointment Today</h2>
+        <p class="text-xl text-gray-200 mb-8">
+          Experience the personalized care and expertise of our board certified physicians.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:6623491999" class="bg-accent-400 hover:bg-accent-500 text-white font-semibold py-4 px-8 rounded-lg transition-colors">
+            Call (662) 349-1999
+          </a>
+          <a href="/patient-portal" class="bg-white hover:bg-gray-50 text-primary-800 font-semibold py-4 px-8 rounded-lg transition-colors">
+            Access Patient Portal
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
